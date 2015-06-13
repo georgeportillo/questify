@@ -1,0 +1,79 @@
+//
+// BRANDING
+//__________________________________________________
+$primary-color:       #ff9800;
+$secondary-color:     #484848;
+
+
+$facebook-primary-color:    #3b5998;
+$twitter-primary-color:     #55acee;
+$googleplus-primary-color:  #dd4b39;
+
+
+$error-color:     #e63027;
+$warning-color:   #8a6d3b;
+$attention-color: #31708f;
+$success-color:   #3c763d;
+
+
+// Layout Colors
+$body-bg-color:   #f0f0f0;
+$header-bg-color: #333;
+$nav-bg-color:    #666;
+
+// Footer
+$footer-bg-color: #4d4d4d;
+$border-color:    #cecece;
+$footer-logo:     #3e3e3e;
+
+
+
+$module-bg-color: #fff;
+
+$quest-bg-color:    $module-bg-color;
+$quest-bg-color-dk: darken($module-bg-color, 5%);
+
+
+
+
+
+
+//
+// TYPOGRAPHY
+//_________________________
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+$primary-font-family: 'Open Sans', sans-serif;
+
+$base-font-size:    14px;
+$font-size-default: 100%;   //14px
+$font-size-h1:      342.8%; //48px / $base-font-size
+$font-size-h2:      257.1%; //36px / $base-font-size
+$font-size-h3:      171.4%; //24px / $base-font-size
+$font-size-h4:      128.6%; //18px / $base-font-size
+$font-size-h5:      114.3%; //16px / $base-font-size
+$font-size-h6:      85.7%;  //12px / $base-font-size
+
+h1{font-size: $font-size-h1;}
+h2{font-size: $font-size-h2;}
+h3{font-size: $font-size-h3;}
+h4{font-size: $font-size-h4;}
+h5{font-size: $font-size-h5;}
+h6{font-size: $font-size-h6;}
+
+
+
+$base-font-color: #484848;
+$font-color-lt:   #fff;
+
+
+//
+// LINKS
+//_________________________
+
+$nav-link-active:         #fff;
+$nav-link-active-bg:      #575757;
+$nav-link-inactive:       darken($nav-link-active, 50%);
+$nav-view-active-icon:    $nav-link-active;
+$nav-view-inactive-icon:  #333;
