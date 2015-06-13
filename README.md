@@ -5,12 +5,15 @@
 
 ###Installation:
 
+This application assumes you have Compass install. 
+
 	$ npm install -g generator-angular-fullstack
 	$ brew install mongodb
 	$ sudo mkdir -p /data/db
 	$ yo angular-fullstack
 	$ npm install
 	$ bower install
+	$ gem install compass
 	
 ###Run Server
 
