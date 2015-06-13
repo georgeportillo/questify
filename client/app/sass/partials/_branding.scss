@@ -16,6 +16,10 @@ $attention-color: #31708f;
 $success-color:   #3c763d;
 
 
+//
+// LAYOUT
+//_________________________
+
 // Layout Colors
 $body-bg-color:   #f0f0f0;
 $header-bg-color: #333;
@@ -27,13 +31,20 @@ $border-color:    #cecece;
 $footer-logo:     #3e3e3e;
 
 
-
+// Modules
 $module-bg-color: #fff;
 
+// Quest Modules
 $quest-bg-color:    $module-bg-color;
 $quest-bg-color-dk: darken($module-bg-color, 5%);
 
 
+
+// Border Radius
+$border-radius-default: 4px;
+$border-radius-sm: $border-radius-default/2;
+$border-radius-lg: $border-radius-default * 2;
+$border-radius-circle: 50%;
 
 
 
@@ -77,3 +88,8 @@ $nav-link-active-bg:      #575757;
 $nav-link-inactive:       darken($nav-link-active, 50%);
 $nav-view-active-icon:    $nav-link-active;
 $nav-view-inactive-icon:  #333;
+
+
+
+
+

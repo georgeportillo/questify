@@ -64,7 +64,9 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
 @import 'account/login/login.scss';
 @import 'admin/admin.scss';
 @import 'main/main.scss';
+@import 'sass/partials/_animations.scss';
 @import 'sass/partials/_branding.scss';
 @import 'sass/partials/_buttons.scss';
+@import 'sass/partials/_grid.scss';
 @import 'modal/modal.scss';
 // endinjector
