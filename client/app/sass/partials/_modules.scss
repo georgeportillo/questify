@@ -1,0 +1,11 @@
+section.module{
+  width: 100%;
+  height: auto;
+  float: left;
+  .module-block{
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: $module-padding;
+  }
+}

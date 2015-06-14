@@ -1,0 +1,111 @@
+header{
+  height: $header-height;
+  position: relative;
+  //padding: 30px 0;
+  background-color: $header-bg-color;
+  /*@include break-xs{
+    height: $m-header-height;
+  }*/
+  .mobile-menu-btn{
+    display: none;
+    /*@include break-xs{
+      width: 30px;
+      display: block;
+      position: relative;
+      top: 20px;
+      left: 0;
+      color: $font-color-lt;
+      text-align: center;
+      cursor: pointer;
+      z-index: 1;
+    }*/
+  }
+  .logo{
+    float: left;
+    /*@include break-xs{
+      width: 100%;
+      position: absolute;
+      top: 5px;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }*/
+    a{
+      color: $font-color-lt;
+      text-decoration: none;
+      img{
+        width: 100%;
+        max-width: 48px;
+        height: auto;
+        max-height: 48px;
+        float: left;
+        margin: 30px 0 0;
+      }
+      h2{
+        float: left;
+        position: relative;
+        top: 2px;
+        margin: 0 0 0 15px;
+        font-weight: 100;
+        line-height: $header-height;
+
+      }
+    }
+  }
+  #user{
+    float: right;
+    line-height: $header-height;
+    a{
+      width: 100%;
+      height: 100%;
+      padding: 0 5px;
+      display: block;
+      text-decoration: none;
+      @include transition(background-color .5s ease);
+      &:hover{
+        //background-color: lighten($primary-color-dk, 5%);
+      }
+      p{
+        display: inline-block;
+        margin: 0 12px 0 0;
+        //color: $white;
+        font-weight: 100;
+      }
+      .user-img{
+        display: inline-block;
+        position: relative;
+        top: 16px;
+        img{
+          max-width: 48px;
+          max-height: 48px;
+          //border: 2px solid $white;
+        }
+
+      }
+    }
+  }
+  a#login-btn{
+    float: right;
+    padding: 0 10px;
+    line-height: $header-height;
+    color: $font-color-lt;
+    font-weight: 700;
+    text-decoration: none;
+    @include transition(background-color .5s ease);
+    &:hover{
+      //background-color: lighten($primary-color-dk, 5%);
+    }
+    /*@include break-xs{
+      position: absolute;
+      top: 0px;
+      right: 15px;
+      line-height: $m-header-height;
+    }*/
+  }
+}
+
+
+
+
+
+

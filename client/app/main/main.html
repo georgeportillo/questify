@@ -1,39 +1,80 @@
-<div class="main-nav">
-  <div class="container">
-    <div class="logo"><img src="http://placehold.it/200x50" alt=""></div>
-    <div class="login">Login</div>
-  </div>
-</div>
+<div id="mobile-menu"></div>
+
+<!-- HEADER -->
+<div ng-include="'components/header/header.html'"></div>
+
 <div class="hero">
-  <div class="inner-center">
-    <h1 class="title">Team engagement made easy</h1>
-    <h3 class="subtitle">From a new hire to your most seasoned team member, <br> build the environment your team wants.</h3>
-    <div class="sign-up">
-      <input class="flex-item" type="text" placeholder="Email Address">
-      <input class="flex-item" type="text" placeholder="Company Name">
-      <button class="flex-item">Get Notified</button>
-    </div>
-  </div>
-</div>
-<div class="features">
-  <div class="container">
-    <div class="col-sm-4 feature">
-      <img src="http://placehold.it/40x40" alt="">
-      <h1>Create</h1>
-      <p>Create events called Quests to help accomplish anything as a team.</p>
-    </div>
-    <div class="col-sm-4 feature">
-      <img src="http://placehold.it/40x40" alt="">
-      <h1>Get Involved</h1>
-      <p>Invite team members or join Quests that matter to you and your team.</p>
-    </div>
-    <div class="col-sm-4 feature">
-      <img src="http://placehold.it/40x40" alt="">
-      <h1>Safe and Secure</h1>
-      <p>Questify uses 256 AES encryption to secure your content.</p>
-    </div>
+  <div class="hero-content">
+    <h1>Team engagement, made easy</h1>
+    <h4>From a new hire to your most seasoned team member,
+      <br>
+      build the enviornment your team wants to become engaged and productive.
+    </h4>
+    <form name="notified" ng-conroller="notifiedCtrl" ng-submit="submit()" novalidate>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-5">
+            <div class="form-group">
+              <input type="text" id="email" name="email" placeholder="Email Address" class="form-control large" ng-model="user.email" required/>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-5">
+            <div class="form-group">
+              <input type="text" id="company_name" name="company_name" placeholder="Company Name" class="form-control large" ng-model="company.name" required/>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-2">
+            <button type="submit" class="q-btn">Get Notified</button>
+          </div>
+        </div>
+      </div>
+    </form>
   </div>
 </div>
 
+<section class="module">
+  <div class="container">
+    <div class="row">
+      <div class="module-block">
+        <!-- landing feature item -->
+        <div class="col-xs-12 col-sm-3">
+          <div class="landing-feature-item">
+            <img src="../assets/images/pages/landing/icons/create-icon.png"/>
+            <h4>Create</h4>
+
+            <p>Create events called Quests to help accomplish anything as a team</p>
+          </div>
+        </div>
+        <!-- landing feature item -->
+        <div class="col-xs-12 col-sm-3">
+          <div class="landing-feature-item">
+            <img src="../assets/images/pages/landing/icons/involve-icon.png"/>
+            <h4>Get Involved</h4>
+
+            <p>Invite team members or join quests that matter to you and your team</p>
+          </div>
+        </div>
+        <!-- landing feature item -->
+        <div class="col-xs-12 col-sm-3">
+          <div class="landing-feature-item">
+            <img src="../assets/images/pages/landing/icons/communicate-icon.png"/>
+            <h4>Communication is key</h4>
+
+            <p>Keep the momentum going with quest relevant conversations</p>
+          </div>
+        </div>
+        <!-- landing feature item -->
+        <div class="col-xs-12 col-sm-3">
+          <div class="landing-feature-item">
+            <img src="../assets/images/pages/landing/icons/secure-icon.png"/>
+            <h4>Safe and Secure</h4>
+
+            <p>Questify uses 256 bit AES encryption to secure your content</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
