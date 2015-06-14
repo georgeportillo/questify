@@ -3,4 +3,45 @@ footer{
   height: $footer-height;
   float: left;
   background-color: $footer-bg-color;
+  ul{
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+      display: inline;
+      margin-right: 15px;
+      line-height: $footer-height;
+      &:last-child{
+        margin-right: 0;
+      }
+      a{
+        color: $font-color-lt;
+        text-decoration: none;
+        /*&:hover{
+          @extend a;
+        }*/
+      }
+    }
+  }
+  img.footer-logo{
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /*@include break-xs{
+      left: 15px;
+      right: inherit;
+    }*/
+  }
+  small{
+    float: right;
+    line-height: $footer-height;
+    color: $font-color-lt;
+    /*@include break-xs{
+      right: 15px;
+    }*/
+  }
 }

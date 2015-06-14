@@ -16,12 +16,12 @@
         <div class="row">
           <div class="col-xs-12 col-sm-5">
             <div class="form-group">
-              <input type="text" id="email" name="email" placeholder="Email Address" class="form-control large" ng-model="user.email" required/>
+              <input type="text" id="notified_email" name="notified_email" placeholder="Email Address" class="form-control large" ng-model="user.email" required/>
             </div>
           </div>
           <div class="col-xs-12 col-sm-5">
             <div class="form-group">
-              <input type="text" id="company_name" name="company_name" placeholder="Company Name" class="form-control large" ng-model="company.name" required/>
+              <input type="text" id="notified_company_name" name="notified_company_name" placeholder="Company Name" class="form-control large" ng-model="company.name" required/>
             </div>
           </div>
           <div class="col-xs-12 col-sm-2">
@@ -124,19 +124,17 @@
       Let's get started
     </h1>
 
-    <form name="notified" ng-conroller="notifiedCtrl" ng-submit="submit()" novalidate>
+    <form name="started" ng-conroller="notifiedCtrl" ng-submit="submit()" novalidate>
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-5">
             <div class="form-group">
-              <input type="text" id="email" name="email" placeholder="Email Address" class="form-control large"
-                     ng-model="user.email" required/>
+              <input type="text" id="started_email" name="started_email" placeholder="Email Address" class="form-control large" ng-model="user.email" required/>
             </div>
           </div>
           <div class="col-xs-12 col-sm-5">
             <div class="form-group">
-              <input type="text" id="company_name" name="company_name" placeholder="Company Name"
-                     class="form-control large" ng-model="company.name" required/>
+              <input type="text" id="started_company_name" name="started_company_name" placeholder="Company Name" class="form-control large" ng-model="company.name" required/>
             </div>
           </div>
           <div class="col-xs-12 col-sm-2">
