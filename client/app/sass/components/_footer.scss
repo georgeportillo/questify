@@ -1,5 +1,6 @@
 footer{
   width: 100%;
-  height: auto;
+  height: $footer-height;
   float: left;
+  background-color: $footer-bg-color;
 }

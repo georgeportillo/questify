@@ -38,6 +38,24 @@ header {
     }
 }
 
+.module-started {
+    width: 100% !important;
+    height: 600px !important;
+    float: left;
+    display: table;
+    background: url(../assets/images/modules/landing/started-module-image.jpg);
+    background-size: cover;
+    .started-content{
+        display: table-cell;
+        color: $font-color-lt;
+        text-align: center;
+        vertical-align: middle;
+        h1{
+            margin: 0 0 25px 0;
+            font-weight: 100;
+        }
+    }
+}
 
 
 

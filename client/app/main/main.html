@@ -3,6 +3,7 @@
 <!-- HEADER -->
 <div ng-include="'components/header/header.html'"></div>
 
+<!-- HERO MODULE -->
 <div class="hero">
   <div class="hero-content">
     <h1>Team engagement, made easy</h1>
@@ -32,6 +33,7 @@
   </div>
 </div>
 
+<!-- LANDING FEATURED MODULE -->
 <section class="module">
   <div class="container">
     <div class="row">
@@ -74,6 +76,75 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- LANDING AWARDS MODULE -->
+<section class="module module-colored landing-awards">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="module-block">
+          <h1>Questify is a <br> 1st place winner!</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <!-- award item -->
+        <div class="awards-item">
+          <img src="../assets/images/pages/landing/awards/award-yammer.png"/>
+          <p>
+            Most creative application that used the Yammer API <br>
+            Developer Week 2015
+          </p>
+        </div>
+        <!-- award item -->
+        <div class="awards-item">
+          <img src="../assets/images/pages/landing/awards/award-mongo.png"/>
+          <p>
+            Most creative application that used the Mongolab <br>
+            Developer Week 2015
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="landing-homepage-image">
+          <img class="img-responsive" src="../assets/images/modules/landing/home-page-image.jpg"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LANDING STARTED MODULE -->
+<section class="module module-started">
+  <div class="started-content">
+    <h1>
+      Let's get started
+    </h1>
+
+    <form name="notified" ng-conroller="notifiedCtrl" ng-submit="submit()" novalidate>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-5">
+            <div class="form-group">
+              <input type="text" id="email" name="email" placeholder="Email Address" class="form-control large"
+                     ng-model="user.email" required/>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-5">
+            <div class="form-group">
+              <input type="text" id="company_name" name="company_name" placeholder="Company Name"
+                     class="form-control large" ng-model="company.name" required/>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-2">
+            <button type="submit" class="q-btn q-btn-primary">Get Notified</button>
+          </div>
+        </div>
+      </div>
+    </form>
   </div>
 </section>
 
