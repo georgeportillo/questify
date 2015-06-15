@@ -81,6 +81,15 @@ $black: #000;
             display: flex;
             flex-wrap: wrap;
             padding: 0 10%;
+            &.sent {
+                button {
+                    color: orange;
+                    font-weight: 600;
+                    background-color: rgba(255, 255, 255, 1);
+                    border-radius: 0px;
+                    border: none;
+                }
+            }
             .flex-item {
                 margin: 10px;
                 flex: 1;

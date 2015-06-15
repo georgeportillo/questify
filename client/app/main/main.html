@@ -8,10 +8,16 @@
   <div class="inner-center">
     <h1 class="title">Team engagement made easy</h1>
     <h3 class="subtitle">From a new hire to your most seasoned team member, <br> build the environment your team wants.</h3>
-    <div class="sign-up">
-      <input class="flex-item" type="text" placeholder="Email Address">
-      <input class="flex-item" type="text" placeholder="Company Name">
-      <button class="flex-item">Get Notified</button>
+    <div class="sign-up" ng-show="!sent">
+      <input ng-model="email.email" class="flex-item" type="email" placeholder="Email Address">
+      <input ng-model="email.company" class="flex-item" type="text" placeholder="Company Name">
+      <button class="flex-item" ng-click="getNotified()">
+        <span ng-show="!sending">Get Notified</span>
+        <span ng-show="sending">Sending email...</span>
+      </button>
+    </div>
+    <div class="sign-up sent" ng-show="sent">
+      <button class="flex-item">Thank you! We've received your message</button>
     </div>
   </div>
 </div>
