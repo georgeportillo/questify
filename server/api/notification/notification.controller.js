@@ -3,7 +3,8 @@
 var _ = require('lodash');
 var Notification = require('./notification.model');
 var mandrill = require('mandrill-api/mandrill');
-var mandrill_client = new mandrill.Mandrill('89OWZi1rhJoauPjnZiQ-Qw');
+var mandrill_client = new mandrill.Mandrill('qhyw-mpX5GWb97NEDH_OZw');
+// var mandrill_client = new mandrill.Mandrill('89OWZi1rhJoauPjnZiQ-Qw'); This app
 
 // Get list of notifications
 exports.index = function(req, res) {
@@ -21,6 +22,7 @@ exports.getNotified = function(req, res) {
   }
 
   recipient.push(user_information);
+
   var message = {
       "subject": 'Thank you for signing up',
       "text": 'Hello, thank you for signing up for Questify. We will notify you when it is ready to be used.',
@@ -31,7 +33,7 @@ exports.getNotified = function(req, res) {
           "Reply-To": 'noreply@questify.io'
       },
       "metadata": {
-          "website": "www.questify.com"
+          "website": "www.questify.io"
       }
   };
 
