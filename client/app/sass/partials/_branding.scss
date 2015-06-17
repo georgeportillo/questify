@@ -17,13 +17,14 @@ $success-color:   #3c763d;
 
 
 //
-// LAYOUT
+// LAYOUT COLORS
 //_________________________
 
-// Layout Colors
 $body-bg-color:   #f0f0f0;
 $header-bg-color: #333;
 $nav-bg-color:    #666;
+
+$browse-happy-bg-color: #ccc;
 
 // Footer
 $footer-bg-color: #4d4d4d;
@@ -45,6 +46,15 @@ $border-radius-default: 4px;
 $border-radius-sm: $border-radius-default/2;
 $border-radius-lg: $border-radius-default * 2;
 $border-radius-circle: 50%;
+
+$border-radius-q-btn: 30px;
+
+
+//
+// COMPONENT COLORS
+//_________________________
+$primary-btn-color: #fff;
+$secondary-btn-color: $secondary-color;
 
 
 
@@ -76,7 +86,8 @@ h6{font-size: $font-size-h6;}
 
 
 $base-font-color: #484848;
-$font-color-lt:   #fff;
+$font-color-lt:   lighten($base-font-color, 100%);
+$font-color-dk:   darken($base-font-color, 100%);
 
 
 //

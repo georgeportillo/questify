@@ -1,0 +1,15 @@
+section.module{
+  width: 100%;
+  height: auto;
+  float: left;
+  &.module-colored{
+    background-color: $module-bg-color;
+  }
+
+  .module-block{
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: $module-padding;
+  }
+}
