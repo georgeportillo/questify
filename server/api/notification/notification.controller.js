@@ -4,7 +4,6 @@ var _ = require('lodash');
 var Notification = require('./notification.model');
 var mandrill = require('mandrill-api/mandrill');
 var mandrill_client = new mandrill.Mandrill('qhyw-mpX5GWb97NEDH_OZw');
-// var mandrill_client = new mandrill.Mandrill('89OWZi1rhJoauPjnZiQ-Qw'); This app
 
 // Get list of notifications
 exports.index = function(req, res) {
@@ -18,32 +17,43 @@ exports.getNotified = function(req, res) {
   var recipient = [];
 
   var user_information = {
-    email: req.body.email
+    email: req.body.email,
+		company: req.body.company
   }
 
   recipient.push(user_information);
 
-  var message = {
-      "subject": 'Thank you for signing up',
-      "text": 'Hello, thank you for signing up for Questify. We will notify you when it is ready to be used.',
-      "from_email": 'rabidracoon@questify.io',
-      "from_name": 'The Rabid Racoon',
-      "to": recipient, 
-      "headers": {
-          "Reply-To": 'noreply@questify.io'
-      },
-      "metadata": {
-          "website": "www.questify.io"
-      }
-  };
+  Notification.create(user_information, function(err, notification) {
+    if(err) { return handleError(res, err); }
+    return res.json(201, notification);
+  
+	
+	
+		var message = {
+				"subject": 'Thank you for signing up',
+				"text": 'Hello, thank you for signing up for Questify. We will notify you when it is ready to be used.',
+				"from_email": 'rabidracoon@questify.io',
+				"from_name": 'The Rabid Racoon',
+				"to": recipient, 
+				"headers": {
+						"Reply-To": 'noreply@questify.io'
+				},
+				"metadata": {
+						"website": "www.questify.io"
+				}
+		};
 
-  mandrill_client.messages.send({
-      "message": message
-  }, function(result) {
-    return res.json(201, result);
-  }, function(e) {
-    return res.send(e);
-  });
+		mandrill_client.messages.send({
+				"message": message
+		}, function(result) {
+			return res.json(201, result);
+		}, function(e) {
+			return res.send(e);
+		});
+	
+	
+	
+	});
 }
 
 
