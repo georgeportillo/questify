@@ -27,8 +27,6 @@ exports.getNotified = function(req, res) {
     if(err) { return handleError(res, err); }
     return res.json(201, notification);
   
-	
-	
 		var message = {
 				"subject": 'Thank you for signing up',
 				"text": 'Hello, thank you for signing up for Questify. We will notify you when it is ready to be used.',
