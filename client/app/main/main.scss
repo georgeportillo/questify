@@ -44,7 +44,7 @@ header {
     float: left;
     display: table;
     // this is the bottom large image
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/modules/landing/BottomHero_FPO_2.jpg) center center;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/modules/landing/BottomHero.jpg) center center;
     background-size: cover;
     .started-content{
         display: table-cell;
@@ -124,7 +124,7 @@ $black: #000;
 }
 
 .hero {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/pages/landing/TopHero_FPO.jpg) center center;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/pages/landing/TopHero.jpg) center center;
     background-size: cover;
     color: #fff;
     display: table;
