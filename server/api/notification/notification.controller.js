@@ -34,7 +34,7 @@ exports.getNotified = function(req, res) {
 				"from_name": 'The Rabid Racoon',
 				"to": recipient, 
 				"headers": {
-						"Reply-To": 'noreply@questify.io'
+						"Reply-To": 'victor@questify.io'
 				},
 				"metadata": {
 						"website": "www.questify.io"

@@ -109,30 +109,19 @@
 </section>
 
 <!-- LANDING STARTED MODULE -->
-<section class="module module-started">
-  <div class="started-content">
-    <h1>
-      We’re on a mission to make your working life fun,<br> engaging and more productive.
-    </h1>
-
-    <form name="started" ng-conroller="notifiedCtrl" ng-submit="submit()" novalidate>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-5">
-            <div class="form-group">
-              <input type="text" id="started_email" name="started_email" placeholder="Email Address" class="form-control large" ng-model="user.email" required/>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-5">
-            <div class="form-group">
-              <input type="text" id="started_company_name" name="started_company_name" placeholder="Company Name" class="form-control large" ng-model="company.name" required/>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-2">
-            <button type="submit" class="q-btn q-btn-primary">Get Notified</button>
-          </div>
-        </div>
-      </div>
-    </form>
+ <div class="hero" style="top: 0px;   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/modules/landing/BottomHero.jpg) center center; background-size: cover;">
+  <div class="inner-center">
+    <h1 class="title">We’re on a mission to make your working life fun, engaging and more productive.</h1>
+    <div class="sign-up" ng-show="!sent">
+      <input ng-model="email.email" class="flex-item" type="email" placeholder="Email Address">
+      <input ng-model="email.company" class="flex-item" type="text" placeholder="Company Name">
+      <button class="flex-item" ng-click="getNotified()">
+        <span ng-show="!sending">Get Notified</span>
+        <span ng-show="sending">Sending email...</span>
+      </button>
+    </div>
+    <div class="sign-up sent" ng-show="sent">
+      <button class="flex-item">Thank you! We've received your message</button>
+    </div>
   </div>
-</section>
+</div>
