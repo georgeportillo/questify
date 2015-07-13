@@ -1,11 +1,16 @@
 header{
   height: $header-height;
   position: relative;
-  //padding: 30px 0;
   background-color: $header-bg-color;
-  /*@include break-xs{
+  @include break-xs{
     height: $m-header-height;
-  }*/
+  }
+  &.transparent{
+    height: 0;
+    background-color: transparent;
+    top: 0;
+    z-index: 1;
+  }
   .mobile-menu-btn{
     display: none;
     /*@include break-xs{

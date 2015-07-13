@@ -1,17 +1,22 @@
-header {
+/*header {
     position: absolute;
     top: 0;
     z-index: 1;
     background-color: transparent !important;
+<<<<<<< Updated upstream
 }
 // There is another hero class that is overiding this one and it has a gradient
+=======
+}*/
+
+>>>>>>> Stashed changes
 .hero {
     width: 100%;
     height: 970px;
     float: left;
     display: table;
     position: relative;
-    top: -$header-height;
+    //top: -$header-height;
     color: $font-color-lt;
     background: url(../../assets/images/pages/landing/hero-image.jpg);
     background-size: cover;
