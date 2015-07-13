@@ -1,19 +1,19 @@
-.q-btn{
+.standard-btn{
   width: 100%;
   height: auto;
   margin: 0 20px 0;
   padding: 10px;
-  color: $primary-btn-color;
+  color: $btn-color-lt;
   font-size: 20px;
   font-weight: 100;
   text-align: center;
   cursor: pointer;
-  border: 2px solid $primary-btn-color;
+  border: 2px solid $btn-color-lt;
   background-color: transparent;
   @include border-radius($border-radius-q-btn);
 }
 
-.q-btn-primary{
+.standard-btn-primary{
   color: $primary-color;
   border: 2px solid $primary-color;
 }

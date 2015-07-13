@@ -1,3 +1,76 @@
-<div class="col-md-12">
-This is the survey_questions view.
-</div>
+<section class="module">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>
+          Welcome to the Questify product survey! Questify is on a mission to empower employees to share diverse
+          talents,
+          experiences, and ideas in order to ultimately nurture the best collaborative culture. We are looking for
+          feedback to shape our approach for employees and employers alike. This short survey that should take less than
+          10 minutes to complete. Rest assured that all answers you provide will be kept confidential.
+        </h3>
+      </div>
+
+      <!-- question -->
+      <label>
+        1. What do you lke the most about your job and company? What do you like the least?
+      </label>
+      <textarea ng-model="suvey.question.enjoy"></textarea>
+
+      <!-- question -->
+      <label>2. How did you find your job? Briefly describe your job description.</label>
+      <textarea ng-model="suvey.question.job"></textarea>
+
+
+      <!-- question -->
+      <label>
+        3. Do you feel like your work is valued? Is it clear to you how your work positively impacts the goals of
+        the company or your department specifically?
+      </label>
+      <textarea ng-model="survey.question.valued"></textarea>
+
+
+      <!-- question -->
+      <label>
+        4. How important is engagement and team building with your coworkers to your overall satisfaction with your
+        job and company? Scale of 1 to 5 with 1 being not at all important and 5 being very important.
+      </label>
+      <form class="form-inline" role="form">
+          <label class="btn btn-default">
+            <input type="radio" name="thing1"> 1
+          </label>
+          <label class="btn btn-default">
+            <input type="radio" name="thing1"> 2
+          </label>
+          <label class="btn btn-default">
+            <input type="radio" name="thing1"> 3
+          </label>
+          <label class="btn btn-default">
+            <input type="radio" name="thing1"> 4
+          </label>
+          <label class="btn btn-default">
+            <input type="radio" name="thing1"> 5
+          </label>
+      </form>
+
+
+      <!-- question -->
+      <label>
+        5. Have we missed anything? Is there anything you would like to add?
+      </label>
+      <textarea ng-model="survey.question.additional"></textarea>
+
+
+
+
+      <div ng-show="!sent">
+        <button ng-click="surveyQuestions()">Submit</button>
+      </div>
+      <div ng-show="sent">
+        <p>Thank you! We've received your message</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>

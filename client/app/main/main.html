@@ -1,5 +1,5 @@
 <div id="mobile-menu"></div>
-
+<a href="/survey_questions">Survey</a>
 <!-- HEADER -->
 <div ng-include="'components/header/header_transparent.html'"></div>
 
@@ -11,7 +11,7 @@
     <div class="sign-up" ng-show="!sent">
       <input ng-model="email.email" class="flex-item" type="email" placeholder="Email Address">
       <input ng-model="email.company" class="flex-item" type="text" placeholder="Company Name">
-      <button class="flex-item" ng-click="getNotified()">
+      <button class="flex-item standard-btn" ng-click="getNotified()">
         <span ng-show="!sending">Get Notified</span>
         <span ng-show="sending">Sending email...</span>
       </button>
